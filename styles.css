@@ -35,6 +35,9 @@ ul {
     font-size: 1.2em;
     margin: auto 24px;
 }
+.mobile-nav-img {
+    display: none;
+}
 ul li:hover {
     cursor: pointer;
     background-color: grey;
@@ -123,6 +126,9 @@ em {
     background-color: #e9e9e7;
     padding-bottom: 34px;
 }
+#mobile-programs {
+    display: none;
+}
 h3 {
     text-align: center;
     font-size: 2em;
@@ -205,4 +211,115 @@ footer {
 footer div {
     display: flex;
     gap: 24px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    h2 {
+        font-size: 2em;
+    }
+    #info h3 {
+        font-size: 1.5em;
+    }
+    br {
+        display: none;
+    }
+    .flex {
+        margin: 32px 32px;
+    }
+    .thesis-img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        display: none;
+    }
+    ul {
+        display: none;
+    }
+    .mobile-nav-img {
+        display: block;
+        height: 32px;
+        margin: auto 24px;
+    }
+    #banner {
+        flex-direction: column;
+    }
+    #banner-img {
+        width: 100%;
+        margin: 0;
+    }
+    h2 {
+        margin: 0 0 32px 16px;
+    }
+    #something p {
+        margin: 0 0 24px 16px;
+        width: 80%;
+        font-size: 1.2em;
+    }
+    button {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #info {
+        display: none;
+    }
+    #side-image {
+        width: 100%;
+    }
+    .side {
+        flex-direction: column;
+    }
+    .info-img {
+        width: 90%;
+        height: 12em;
+        margin: 0 16px 0 16px;
+    }
+    .side div {
+        margin-left: 32px;
+        margin-bottom: 64px;
+        font-size: 1.3em;
+    }
+    .side div p:nth-child(1) {
+        font-size: 1.5em;
+        font-weight: 800;
+        margin-bottom: 2px;
+    }
+    .side div p:nth-child(2) {
+        margin: 10px 0;
+    }
+    .flex {
+        display: none;
+    }
+    #mobile-programs {
+        display: block;
+    }
+    h3 {
+        margin-bottom: 16px;
+    }
+    .mobile-courses {
+        background-color: #C2C2BE;
+        margin: 0 16px 8px 16px;
+        padding: 16px 24px 16px;
+        font-size: 1.3em;
+    } 
+    .mobile-courses:hover {
+        cursor: pointer;
+    }
+    #video-conatainer {
+        width: 100%;
+        margin: 0;
+        border-top: 3px solid #C2C2BE;
+        border-bottom: 3px solid #C2C2BE;
+    }
+    #video-conatainer div, #video-conatainer p, #thesis-info-conatiner {
+        display: none;
+    }
+    footer {
+        border: none;
+    }
+    footer div {
+        display: none;
+    }
 }
