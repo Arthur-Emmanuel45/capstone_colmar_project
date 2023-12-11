@@ -165,6 +165,9 @@ h3 {
     padding-bottom: 24px;
     font-size: 0.8em;
 }
+div .gal:hover {
+    cursor: pointer;
+}
 
 #thesis-exhibit {
     background-color: #F4F7F0;
